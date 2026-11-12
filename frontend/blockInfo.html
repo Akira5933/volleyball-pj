@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予選ブロック情報 | 冬季バレーボール大会</title>
+    <link rel="stylesheet" href="./css/info.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-label">WINTER VOLLEYBALL TOURNAMENT</p>
+            <h1>予選ブロック情報</h1>
+            <p class="site-subtitle">ブロック編成・リーグ戦結果・順位表</p>
+        </div>
+    </header>
+
+    <nav class="site-nav" aria-label="ページメニュー">
+        <div class="container nav-links">
+            <a href="./home.html">ホーム</a>
+            <a href="./teamsInfo.html">参加チーム</a>
+            <a href="./blockInfo.html" aria-current="page">予選ブロック</a>
+            <a href="./tournamentInfo.html">決勝トーナメント</a>
+            <a href="./scheduleInfo.html">スケジュール</a>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow">GROUP STAGE</p>
+                <h2>予選リーグ</h2>
+                <p>6つのブロックに分かれて試合を行い、各ブロック上位3チームが決勝に進出します。</p>
+            </div>
+            <span class="status-badge">組み合わせ未登録</span>
+        </div>
+
+        <section class="summary-grid" aria-label="予選概要">
+            <div class="summary-card">
+                <span class="summary-label">参加予定</span>
+                <strong class="summary-value">26 <small>チーム</small></strong>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">予選</span>
+                <strong class="summary-value">6 <small>ブロック</small></strong>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">決勝進出</span>
+                <strong class="summary-value">各3 <small>チーム</small></strong>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="block-list-title">
+            <div class="panel-heading">
+                <h3 id="block-list-title">ブロック一覧</h3>
+                <p>チーム編成後に各ブロックの参加チームを表示します。</p>
+            </div>
+            <div id="block-list" class="block-grid">
+                <article class="block-card"><h4>Aブロック</h4><p>チーム編成待ち</p></article>
+                <article class="block-card"><h4>Bブロック</h4><p>チーム編成待ち</p></article>
+                <article class="block-card"><h4>Cブロック</h4><p>チーム編成待ち</p></article>
+                <article class="block-card"><h4>Dブロック</h4><p>チーム編成待ち</p></article>
+                <article class="block-card"><h4>Eブロック</h4><p>チーム編成待ち</p></article>
+                <article class="block-card"><h4>Fブロック</h4><p>チーム編成待ち</p></article>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="league-results-title">
+            <div class="panel-heading">
+                <h3 id="league-results-title">リーグ戦結果・順位</h3>
+                <p>勝ち点の算出方法と同点時の順位決定ルールは、今後確定します。</p>
+            </div>
+            <div id="league-results" class="empty-state">
+                <p>試合結果はまだ登録されていません。</p>
+                <p class="muted">結果登録機能の実装後、ここに順位表を表示します。</p>
+            </div>
+        </section>
+
+        <a class="back-link" href="./home.html">← ホームに戻る</a>
+    </main>
+
+    <footer class="site-footer">冬季バレーボール大会 管理システム</footer>
+</body>
+
+</html>

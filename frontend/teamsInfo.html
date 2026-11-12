@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参加チーム情報 | 冬季バレーボール大会</title>
+    <link rel="stylesheet" href="./css/info.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-label">WINTER VOLLEYBALL TOURNAMENT</p>
+            <h1>参加チーム情報</h1>
+            <p class="site-subtitle">冬季バレーボール大会 管理システム</p>
+        </div>
+    </header>
+
+    <nav class="site-nav" aria-label="ページメニュー">
+        <div class="container nav-links">
+            <a href="./home.html">ホーム</a>
+            <a href="./teamsInfo.html" aria-current="page">参加チーム</a>
+            <a href="./blockInfo.html">予選ブロック</a>
+            <a href="./tournamentInfo.html">決勝トーナメント</a>
+            <a href="./scheduleInfo.html">スケジュール</a>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow">TEAMS</p>
+                <h2>参加チーム一覧</h2>
+                <p>大会に参加するチームの情報を確認できます。</p>
+            </div>
+            <span class="status-badge">データ連携前</span>
+        </div>
+
+        <section class="summary-grid" aria-label="参加概要">
+            <div class="summary-card">
+                <span class="summary-label">参加予定</span>
+                <strong class="summary-value">26 <small>チーム</small></strong>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">予選ブロック</span>
+                <strong class="summary-value">6 <small>ブロック</small></strong>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="team-list-title">
+            <div class="panel-heading">
+                <h3 id="team-list-title">チーム一覧</h3>
+                <p>登録されたチーム名・メンバー情報を表示する予定です。</p>
+            </div>
+            <div id="team-list" class="empty-state">
+                <p>チームデータはまだ接続されていません。</p>
+                <p class="muted">バックエンド接続後、ここに一覧を表示します。</p>
+            </div>
+        </section>
+
+        <a class="back-link" href="./home.html">← ホームに戻る</a>
+    </main>
+
+    <footer class="site-footer">冬季バレーボール大会 管理システム</footer>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイムスケジュール | 冬季バレーボール大会</title>
+    <link rel="stylesheet" href="./css/info.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-label">WINTER VOLLEYBALL TOURNAMENT</p>
+            <h1>タイムスケジュール</h1>
+            <p class="site-subtitle">試合時刻・使用コート・進行状況</p>
+        </div>
+    </header>
+
+    <nav class="site-nav" aria-label="ページメニュー">
+        <div class="container nav-links">
+            <a href="./home.html">ホーム</a>
+            <a href="./teamsInfo.html">参加チーム</a>
+            <a href="./blockInfo.html">予選ブロック</a>
+            <a href="./tournamentInfo.html">決勝トーナメント</a>
+            <a href="./scheduleInfo.html" aria-current="page">スケジュール</a>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow">MATCH SCHEDULE</p>
+                <h2>試合タイムスケジュール</h2>
+                <p>試合の開始予定時刻とコートを確認できます。</p>
+            </div>
+            <span class="status-badge">スケジュール未登録</span>
+        </div>
+
+        <section class="panel" aria-labelledby="schedule-title">
+            <div class="panel-heading">
+                <h3 id="schedule-title">試合一覧</h3>
+                <p>登録された試合日程を時間順に表示する予定です。</p>
+            </div>
+            <div class="table-scroll">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">開始時刻</th>
+                            <th scope="col">コート</th>
+                            <th scope="col">区分</th>
+                            <th scope="col">対戦カード</th>
+                            <th scope="col">進行状況</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-body">
+                        <tr>
+                            <td colspan="5" class="table-empty">試合スケジュールはまだ登録されていません。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="note-panel" aria-labelledby="schedule-note-title">
+            <h3 id="schedule-note-title">今後追加する機能</h3>
+            <p>運営者による試合日程の登録・編集、コートの割り当て、試合進行状況の更新に対応する予定です。</p>
+        </section>
+
+        <a class="back-link" href="./home.html">← ホームに戻る</a>
+    </main>
+
+    <footer class="site-footer">冬季バレーボール大会 管理システム</footer>
+</body>
+
+</html>

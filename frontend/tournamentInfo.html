@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決勝トーナメント情報 | 冬季バレーボール大会</title>
+    <link rel="stylesheet" href="./css/info.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-label">WINTER VOLLEYBALL TOURNAMENT</p>
+            <h1>決勝トーナメント情報</h1>
+            <p class="site-subtitle">決勝進出チーム・組み合わせ・試合結果</p>
+        </div>
+    </header>
+
+    <nav class="site-nav" aria-label="ページメニュー">
+        <div class="container nav-links">
+            <a href="./home.html">ホーム</a>
+            <a href="./teamsInfo.html">参加チーム</a>
+            <a href="./blockInfo.html">予選ブロック</a>
+            <a href="./tournamentInfo.html" aria-current="page">決勝トーナメント</a>
+            <a href="./scheduleInfo.html">スケジュール</a>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow">FINAL TOURNAMENT</p>
+                <h2>決勝トーナメント</h2>
+                <p>予選各ブロックの上位3チームが進出します。</p>
+            </div>
+            <span class="status-badge">組み合わせ未確定</span>
+        </div>
+
+        <section class="summary-grid" aria-label="決勝概要">
+            <div class="summary-card">
+                <span class="summary-label">進出予定</span>
+                <strong class="summary-value">18 <small>チーム</small></strong>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">進出条件</span>
+                <strong class="summary-value summary-value-text">各ブロック上位3</strong>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">予備戦の出場決定</span>
+                <strong class="summary-value summary-value-text">抽選</strong>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="qualifiers-title">
+            <div class="panel-heading">
+                <h3 id="qualifiers-title">決勝進出チーム</h3>
+                <p>予選順位が確定すると、進出チームを表示します。</p>
+            </div>
+            <div id="qualified-teams" class="empty-state">
+                <p>決勝進出チームは未確定です。</p>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="bracket-title">
+            <div class="panel-heading">
+                <h3 id="bracket-title">トーナメント表</h3>
+                <p>予備戦の出場チームは抽選で決定します。</p>
+            </div>
+            <div id="tournament-bracket" class="empty-state bracket-placeholder">
+                <p>トーナメント表は組み合わせ確定後に表示します。</p>
+                <p class="muted">現時点では対戦順や予備戦の出場チームを仮決めしていません。</p>
+            </div>
+        </section>
+
+        <a class="back-link" href="./home.html">← ホームに戻る</a>
+    </main>
+
+    <footer class="site-footer">冬季バレーボール大会 管理システム</footer>
+</body>
+
+</html>
